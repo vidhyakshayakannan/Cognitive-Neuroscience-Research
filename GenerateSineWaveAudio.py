@@ -9,9 +9,9 @@ import pyaudio
 p = pyaudio.PyAudio()
 
 volume = 1  # range [0.0, 1.0]
-fs = 44100  #  sampling rate of the audio signal in Hz
-duration = 3.0  # in seconds, may be float
-f = 5000.0  # sine frequency, Hz, may be float
+fs = 1000  #  sampling rate of the audio signal in Hz
+duration = 2  # in seconds, may be float
+f = 400.0  # sine frequency, Hz, may be float
 
 samples = (np.sin(2 * np.pi * np.arange(fs * duration) * f / fs)).astype(np.float32)
 

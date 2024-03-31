@@ -81,6 +81,7 @@ stream.stop_stream()
 stream.close()
 p.terminate()
 
+
 # Terminate PyAudio
 p.terminate()
 
