@@ -45,7 +45,7 @@ Contributions are welcome! Here's how you can contribute:
 - Create a pull request
 
 ## Contact
-- LinkedIn: [vidhyakshayakannan](https://www.linkedin.com/in/https://www.linkedin.com/in/vidhyakshaya-kannan-998469214/)
+- LinkedIn: (https://www.linkedin.com/in/https://www.linkedin.com/in/vidhyakshaya-kannan-998469214/)
 - Email: vidhyakshaya.k-26@scds.saiuniversity.edu.in
 
 Feel free to reach out if you have any questions or suggestions!
