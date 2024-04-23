@@ -9,11 +9,14 @@ import pyaudio
 p = pyaudio.PyAudio()
 
 volume = 1  # range [0.0, 1.0]
-fs = 1000  #  sampling rate of the audio signal in Hz
-duration = 2  # in seconds, may be float
-f = 400.0  # sine frequency, Hz, may be float
+fs = 44000 #  sampling rate of the audio signal in Hz
+duration = 5  # in seconds, may be float
+f = 500.0  # sine frequency, Hz, may be float
+f2 = 502.0  # sine frequency, Hz, may be float
 
-samples = (np.sin(2 * np.pi * np.arange(fs * duration) * f / fs)).astype(np.float32)
+freq = (f+f2)/2
+
+samples = (np.sin(2 * np.pi * np.arange(fs * duration) * freq/fs)).astype(np.float32)
 
 ''' Generates a sine wave signal using NumPy. 
 Creates an array of samples by computing the sine function at equally spaced time intervals over the duration specified. 
@@ -38,10 +41,10 @@ p.terminate()
 t = np.linspace(0, duration, 150, endpoint=False)
 
 # generate samples
-samples = np.sin(2 * np.pi * f * t)
+samples = np.sin(2 * np.pi * freq * t)
 
 # plot the sine wave
-plt.figure(figsize=(10, 4))
+plt.figure()
 plt.plot(t, samples)
 plt.title('Sine Wave')
 plt.xlabel('Time (s)')
